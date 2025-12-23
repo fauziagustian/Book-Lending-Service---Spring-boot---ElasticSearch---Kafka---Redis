@@ -1,5 +1,3 @@
-<img width="1536" height="1024" alt="architecture" src="https://github.com/user-attachments/assets/cddeb94b-15fc-4356-9a6a-33c0960a0d51" /># Book Lending System (App + Analytics) — Java 17, Spring Boot, Kafka, Redis, Elasticsearch
-
 This project contains **two Spring Boot microservices**:
 
 1) **book-lending-service** (App) — manages Books, Members, Loans and enforces borrowing rules  
