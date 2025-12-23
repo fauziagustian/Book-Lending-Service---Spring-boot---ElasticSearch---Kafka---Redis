@@ -1,0 +1,29 @@
+package com.example.library.api.dto;
+
+import com.example.library.common.AppConstans;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.experimental.SuperBuilder;
+
+/**
+ * Standard API response wrapper.
+ */
+@AllArgsConstructor
+@Getter
+@JsonInclude(Include.NON_NULL)
+@NoArgsConstructor
+@Setter
+@SuperBuilder
+public class BaseResponse<T> {
+
+    private String responseMessage;
+    private T responseData;
+
+    public void setResponseSucceed() {
+        this.responseMessage = AppConstans.RESPONSE_MESSAGE_SUCCESS_IN;
+    }
+}
