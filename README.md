@@ -33,11 +33,6 @@ This project contains **two Spring Boot microservices**:
 - Lombok
 - OpenAPI / Swagger UI (springdoc)
 
-**Testing**
-- JUnit 5
-- Mockito
-- JaCoCo coverage report
-
 ---
 
 ## Services & Ports
