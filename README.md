@@ -1,12 +1,11 @@
-# Book Lending System (App + Analytics) — Java 17, Spring Boot, Kafka, Redis, Elasticsearch
+<img width="1536" height="1024" alt="architecture" src="https://github.com/user-attachments/assets/cddeb94b-15fc-4356-9a6a-33c0960a0d51" /># Book Lending System (App + Analytics) — Java 17, Spring Boot, Kafka, Redis, Elasticsearch
 
 This project contains **two Spring Boot microservices**:
 
 1) **book-lending-service** (App) — manages Books, Members, Loans and enforces borrowing rules  
 2) **library-analytics-service** (Analytics) — consumes Kafka events and builds read models (Redis + Elasticsearch) and reports (native SQL)
 
-![Uploading architecture.png…]()
-
+![alt text](./architecture.png)
 
 ---
 
@@ -100,7 +99,7 @@ Configured in `application.properties` (not stored in DB):
 
 A ready-to-import Postman collection is included:
 
-- `postman/book-lending-e2e.postman_collection.json`
+- `Book Lending (App + Analytics) - End-to-End_collection.json`
 
 ### Steps
 1) Open Postman → **Import** → select the file above  
@@ -149,3 +148,8 @@ docker compose logs --tail=200 app
 docker compose logs --tail=200 analytics
 docker compose logs --tail=200 kafka
 ```
+
+# Result 
+## Docker
+![alt text](./docker-result-run-container.png)
+
