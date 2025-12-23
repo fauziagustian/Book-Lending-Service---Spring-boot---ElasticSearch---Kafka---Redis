@@ -5,7 +5,7 @@ This project contains **two Spring Boot microservices**:
 1) **book-lending-service** (App) — manages Books, Members, Loans and enforces borrowing rules  
 2) **library-analytics-service** (Analytics) — consumes Kafka events and builds read models (Redis + Elasticsearch) and reports (native SQL)
 
-![Uploading architecture.png…]()
+[![Uploading architecture.png…]()](https://github.com/fauziagustian/Book-Lending-Service---Spring-boot---ElasticSearch---Kafka---Redis/blob/main/architecture.png)
 
 
 ---
